@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Ovis Areis</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
   </head>
   <body>
     <h1 class="main-title">
@@ -34,8 +33,13 @@
             아깝지 않나요? 메일 주소를 남기시고 저희가 수집한 모든 최신 정보를
             누구보다 빠르게 공유받아 보세요!
           </p>
-          <input type="email" placeholder="이메일을 입력하세요" />
-          <button type="submit">전송하기</button>
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="이메일을 입력하세요"
+          />
+          <button type="submit" id="submitButton">전송하기</button>
+
         </div>
       </div>
       <div class="right-content">
@@ -339,5 +343,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

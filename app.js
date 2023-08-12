@@ -1,18 +1,10 @@
-import emailjs from "emailjs-com";
+document.getElementById("submitButton").addEventListener("click", function () {
+  var emailValue = document.getElementById("emailInput").value;
 
-function sendEmail(e) {
-  e.preventDefault();
-
-  emailjs.sendForm("chisae_gmail", "template_6h2hhzo", e.target, "chisae").then(
-    (result) => {
-      console.log(result.text);
-    },
-    (error) => {
-      console.log(error.text);
-    }
-  );
-}
-
-document
-  .querySelector("button[type='submit']")
-  .addEventListener("click", sendEmail);
+  if (emailValue) {
+    alert("전송되었습니다!");
+    document.getElementById("emailInput").value = "";
+  } else {
+    alert("이메일을 입력하세요.");
+  }
+});
