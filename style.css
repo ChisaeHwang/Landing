@@ -337,6 +337,156 @@ button {
 }
 
 /* 24인치 (1680px) 미만 해상도 */
+@media screen and (max-width: 1550px) {
+  body::before {
+    content: ""; /* 필수적으로 빈 내용을 지정해줍니다 */
+    position: absolute; /* 절대 위치를 사용하여 원의 위치를 조정합니다 */
+    bottom: -610px; /* 하단에서 원의 반만큼 올리기 위해 사용 (1400px의 절반) */
+    right: -580px; /* 우측에서 원의 반만큼 옮기기 위해 사용 (1400px의 절반) */
+    width: 1200px;
+    height: 1200px;
+    background-color: #ff8989;
+    border-radius: 50%; /* 원 모양을 만들기 위해 지정 */
+    z-index: -1; /* 기타 콘텐츠 위에 원이 나타나지 않도록 지정 */
+  }
+
+  .container {
+    align-items: flex-start;
+    width: 80vw; /* 처음에는 80%의 가로 폭을 사용 */
+    max-width: 1440px; /* 1440px을 초과하지 않게 설정 */
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+    margin-left: auto; /* 가운데 정렬 */
+    margin-right: auto; /* 가운데 정렬 */
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .left-content {
+    width: 50%;
+    padding: 20px;
+    display: flex; /* 추가된 부분 */
+    align-items: center; /* 추가된 부분 */
+    justify-content: center; /* 만약 가로 정렬도 원한다면 추가 */
+    height: 1000px;
+  }
+
+  .left-box {
+    align-items: center;
+  }
+
+  h1.main-title {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .subtitle {
+    width: 500px;
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    margin-left: -70px;
+  }
+
+  .description {
+    margin-top: 0;
+    margin-left: -70px;
+    margin-bottom: 70px;
+    width: 570px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2; /* 기본값보다 큰 값으로 설정하여 간격을 넓힙니다. */
+  }
+
+  input[type="email"] {
+    margin-top: 0;
+    padding: 14px 7px; /* 패딩의 위아래 값을 조금 늘려줍니다. */
+    width: 80%;
+    height: 30px; /* 높이를 직접 지정합니다. */
+    font-size: 14px; /* 폰트 크기를 늘려줍니다. */
+    border: 2cap solid;
+    border-radius: 50px;
+    margin-left: -70px;
+    text-indent: 20px;
+  }
+
+  button {
+    margin-top: 10px;
+    margin-left: -80px;
+    padding: 23.5px 45px;
+    background-color: #ff8989;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .hashtag {
+    color: #ff8989;
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    display: flex; /* 추가된 부분 */
+    align-items: center; /* 추가된 부분 */
+    justify-content: center; /* 만약 가로 정렬도 원한다면 추가 */
+    height: 1000px;
+  }
+
+  .youtuber-wrap {
+    margin-left: 120px;
+  }
+
+  .youtuber-box {
+    width: 500px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 30px;
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.55); /* 그림자 추가 */
+  }
+
+  .youtuber-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+    border: 2px solid #777; /* 테두리 색상을 #ff8989로 지정. 두께는 2px로 설정 */
+  }
+
+  .youtuber-info {
+    flex: 1;
+  }
+
+  .youtuber-name {
+    font-weight: bold;
+    margin-bottom: -15px;
+  }
+
+  .youtuber-tags {
+    color: #777;
+  }
+}
+
+/* 24인치 (1680px) 미만 해상도 */
 @media screen and (max-width: 1440px) {
   body::before {
     content: ""; /* 필수적으로 빈 내용을 지정해줍니다 */
