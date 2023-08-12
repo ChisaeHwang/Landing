@@ -30,6 +30,7 @@ body {
   height: 90vh;
   position: relative;
   overflow: hidden;
+  transition-duration: 1s;
 }
 
 body::before {
