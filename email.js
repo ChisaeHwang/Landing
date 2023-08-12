@@ -1,3 +1,5 @@
+import emailjs from "emailjs-com";
+
 const sendEmail = () => {
   emailjs.init("chisae");
   let templateParams = {
