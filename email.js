@@ -1,7 +1,5 @@
-import emailjs from "emailjs-com";
-
 // emailjs 초기화
-emailjs.init("chisae");
+emailjs.init("wA-ZHuHMld9IeHF6L");
 
 document.getElementById("submitButton").addEventListener("click", function (e) {
   e.preventDefault(); // form 전송을 막기 위해

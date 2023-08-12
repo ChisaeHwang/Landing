@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Ovis Areis</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.emailjs.com/dist/email.min.js"
+      type="text/javascript"
+    ></script>
+    ;
   </head>
   <body>
     <h1 class="main-title">
@@ -38,12 +43,7 @@
             id="emailInput"
             placeholder="이메일을 입력하세요"
           />
-          <button
-            type="submit"
-            id="submitButton"
-            value="메일보내기"
-            onClick="sendEmail()"
-          >
+          <button type="submit" id="submitButton" value="메일보내기">
             전송하기
           </button>
         </div>
