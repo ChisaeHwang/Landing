@@ -1,2 +1,2 @@
-# randing
+# landing
 randingPage
